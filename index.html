@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-App">
+        <div class="weather">
+          <div class="overview">
+            <ul>
+              <li>Humidity:<span id="humidity"></span>%</li>
+
+              <li>Wind :<span id="wind"></span>km/h</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temp">
+                <img src="" alt="Sunny" id="icon" class="float-left" />
+                <div class="float">
+                  <strong id="temperature"></strong>
+                  <span class="degees"
+                    ><a href="#" id="celcius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <h1 id="city"></h1>
+              <ul>
+                <li>last updated: <span id="date"></span></li>
+                <li id="description"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <small> <a href="">Open-Source Code</a> by Jane Lodipo </small>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
